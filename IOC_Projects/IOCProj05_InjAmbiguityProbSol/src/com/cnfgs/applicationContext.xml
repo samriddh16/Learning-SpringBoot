@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           https://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           https://www.springframework.org/schema/context/spring-context.xsd">
+           
+<bean id="date1" class="java.time.LocalDateTime" factory-method="now" primary="true" />
+<bean id="date2" class="java.time.LocalDateTime" factory-method="of" >
+   <constructor-arg value="2023"/>
+   <constructor-arg value="08"/>
+   <constructor-arg value="01"/>
+   <constructor-arg value="22"/>
+   <constructor-arg value="30"/>
+   <constructor-arg value="45"/>
+</bean>
+<bean id="date3" class="java.time.LocalDateTime" factory-method="of" >
+   <constructor-arg value="2021"/>
+   <constructor-arg value="06"/>
+   <constructor-arg value="10"/>
+   <constructor-arg value="18"/>
+   <constructor-arg value="45"/>
+   <constructor-arg value="35"/>
+</bean>
+
+
+<context:component-scan base-package="com.beans" />
+           
+</beans>
