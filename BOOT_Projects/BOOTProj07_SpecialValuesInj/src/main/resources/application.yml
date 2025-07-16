@@ -1,0 +1,24 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  application:
+    name: BOOTProj07_SpecialValuesInj
+stud:
+  details:
+    sid: 307
+    sname: Samriddh
+    scollege: KIIT
+    hobby: Solving Problems, Playing Tennis, Reading Technical Books
+    nickNames: Sam, Sammy, Babu
+    nick_Nam+-es: Sam, Sammy, Babi
+    phoneNumbers: '8340111788, 9798662953, 9308284603 '
+    idDetails:
+      Adhaar: 473289332
+      Voter: 238432932
+      Driving: 43248932
+    course:
+      cid: 1006
+      cname: Java
+      cduration: 180
+      faculty: Natraj Sir, Durga Sir, Hari Sir

@@ -1,0 +1,35 @@
+spring:
+ application:
+   name: BOOTProj08_YAML
+
+stud:
+ details:
+   sid: 307
+   sname: Samriddh
+   scollege: KIIT
+   hobby:
+      - Solving Problems
+      - Playing Tennis
+      - Reading Technical Books
+   nickNames: 
+      - Sammy
+      - Sam
+      - Babu
+   nick--Names: [sammu,guddu,bablu]
+   phoneNumbers:
+      - 8340111788
+      - 4732894323
+      - 3984328432
+   idDetails:
+      Adhaar: 237894327
+      Voter: 328439283
+      Driving: 83924323 
+   course:
+      cid: 3929
+      cname: DSA
+      cduration: 180
+   faculty:
+      - Natraj Sir
+      - Durga Sir
+      - Hari Sir
+
