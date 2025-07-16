@@ -1,2 +1,2 @@
 # Learning-SpringBoot
-Learning spring boot and microservices 
+Learning Spring Boot and Microservices 
