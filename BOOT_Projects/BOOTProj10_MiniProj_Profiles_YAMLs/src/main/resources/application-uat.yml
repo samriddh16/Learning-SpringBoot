@@ -1,0 +1,13 @@
+# Conversion to YAML from Properties formar report
+# Warnings:
+# - The yaml file had comments which are lost in the refactoring!
+spring:
+  datasource:
+    type: com.mchange.v2.c3p0.ComboPooledDataSource
+c3p0:
+  driverclass: com.mysql.cj.jdbc.Driver
+  jdbcurl: jdbc:mysql://localhost:3306/springdb
+  user: root
+  password: samRoot-16
+  minspoolize: 10
+  maxpoolsize: 1000

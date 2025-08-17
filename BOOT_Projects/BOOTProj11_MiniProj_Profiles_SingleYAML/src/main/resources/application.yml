@@ -1,0 +1,67 @@
+spring:
+  application:
+    name: BOOTProj03_MiniProj_RealtimeDI
+  profiles:
+    active: prod
+---
+
+spring:
+  config:
+    activate:
+      on-profile: dev
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/springdb
+    username: root
+    password: samRoot-16
+    hikari:
+      maximum-pool-size: 1000
+      minimum-idle: 10
+      max-lifetime: 100000
+---
+
+spring:
+  config:
+    activate:
+      on-profile: prod
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: hiber
+    password: orhiber1905
+    dbcp2:
+      max-total: 1000
+      min-idle: 10
+      max-conn-lifetime-millis: 100000
+    type: org.apache.commons.dbcp2.BasicDataSource
+---
+
+spring:
+  config:
+    activate:
+      on-profile: test
+  datasource:
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    url: jdbc:oracle:thin:@localhost:1521:xe
+    username: hiber
+    password: orhiber1905
+    oracleucp:
+      max-pool-size: 1000
+      min-idle: 10
+      max-connection-reuse-time: 100000
+    type: oracle.ucp.jdbc.PoolDataSourceImpl
+---
+
+spring:
+  config:
+    activate:
+      on-profile: uat
+  datasource:
+    type: com.mchange.v2.c3p0.ComboPooledDataSource
+c3p0:
+  driverclass: com.mysql.cj.jdbc.Driver
+  jdbcurl: jdbc:mysql://localhost:3306/springdb
+  user: root
+  password: samRoot-16
+  minspoolize: 10
+  maxpoolsize: 1000
