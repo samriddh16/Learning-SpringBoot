@@ -34,6 +34,11 @@ This repository contains comprehensive Spring Boot mini-projects demonstrating c
 
 ---
 
+## 📧 **Mail Integration**
+- **BOOTMAILProj01_SendMailOperation**: Email sending functionality using Spring Boot Mail integration
+
+---
+
 ## 🌟 **Key Features Covered**
 - Dependency Injection patterns and best practices
 - Loose coupling with interfaces and abstractions
@@ -44,6 +49,7 @@ This repository contains comprehensive Spring Boot mini-projects demonstrating c
 - Profile inheritance and hierarchical setups
 - Application lifecycle management with runners
 - Lambda expressions in Spring Boot context
+- Email integration with Spring Boot Mail starter
 - Real-world mini-project implementations
 
 ---
@@ -61,6 +67,7 @@ This repository contains comprehensive Spring Boot mini-projects demonstrating c
 2. **Explore advanced IOC** (Projects 05-08) for configuration mastery
 3. **Master profiles** (Projects 09-12) for environment management
 4. **Learn application lifecycle** (Projects 13-14) for startup customization
+5. **Implement integrations** (Mail project) for external service communication
 
 ---
 
