@@ -47,6 +47,22 @@ This repository contains comprehensive Spring Core (IOC) concept-based mini-proj
 ## 🔍 **Dependency Lookup Patterns**
 - **IOCProj22_TraditionalDependencyLookup**: Traditional dependency lookup implementation and challenges
 - **IOCProj23_TraditionalDependencyLookupSoln**: Solutions and best practices for dependency lookup
+- **IOCProj24_LookupMethodInj(TDLBetterApp)**: Lookup Method Injection for better dependency lookup solutions
+- **IOCProj25_MiniProj_LMI**: Mini-project implementing Lookup Method Injection patterns
+
+---
+
+## 🔧 **Advanced Injection Techniques**
+- **IOCProj26_MethodReplacerInj**: Method Replacer injection for dynamic method implementation
+
+---
+
+## ☕ **100% Java Configuration Projects**
+- **IOCProj27_100pJavaCnfgsAppDevelopment**: Complete application development using pure Java configuration
+- **IOCProj28_MethodReplacer_100pJavaCnfgs**: Method Replacer implementation with 100% Java configuration
+- **IOCProj29_MiniProj_100pJavaCnfgs**: Mini-project demonstrating pure Java configuration approach
+- **IOCProj30_MiniProj_100pMutilpleCnfgs**: Multiple configuration classes in pure Java setup
+- **IOCProj31_MiniProj_MultipleCnfgs**: Advanced multiple configuration management patterns
 
 ---
 
@@ -59,6 +75,9 @@ This repository contains comprehensive Spring Core (IOC) concept-based mini-proj
 - Bean aliasing and naming conventions
 - Lifecycle management approaches (Declarative, Programmatic, Annotation-based)
 - Traditional dependency lookup vs. modern DI patterns
+- Lookup Method Injection and Method Replacer techniques
+- 100% Java-based configuration without XML
+- Multiple configuration class management
 - Real-world application scenarios and best practices
 
 ---
@@ -77,7 +96,8 @@ This repository contains comprehensive Spring Core (IOC) concept-based mini-proj
 2. **Explore Design Patterns** - Learn pattern implementation with Spring
 3. **Build Real Applications** - Practice with realtime projects
 4. **Understand Bean Management** - Learn scopes and lifecycle
-5. **Advanced Concepts** - Dive into i18n and dependency lookup patterns
+5. **Advanced Injection Techniques** - Lookup methods and method replacers
+6. **Pure Java Configuration** - Master XML-free Spring development
 
 ---
 
