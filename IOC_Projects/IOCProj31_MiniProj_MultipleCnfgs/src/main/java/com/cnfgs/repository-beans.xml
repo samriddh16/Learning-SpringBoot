@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+           http://www.springframework.org/schema/beans 
+           https://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+          https://www.springframework.org/schema/context/spring-context.xsd">   
+
+<bean id="hkCp" class="com.zaxxer.hikari.HikariDataSource">
+   <property name="driverClassName" value="${datasource.class}"/>
+   <property name="jdbcUrl" value="${datasource.url}"/>
+   <property name="username" value="${datasource.username}"/>
+   <property name="password" value="${datasource.password}"/>
+   <property name="minimumIdle" value="${datasource.minidle}"/>
+   <property name="maximumPoolSize" value="${datasource.poolsize}"/>
+   <property name="idleTimeout" value="${datasource.idletimeout}"/>            <!-- in milliseconds -->
+</bean>
+
+<context:component-scan base-package="com.dao"/>
+
+</beans>
